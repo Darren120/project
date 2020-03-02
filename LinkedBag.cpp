@@ -113,27 +113,27 @@ template<class ItemType>
 int LinkedBag<ItemType>::getCurrentSizeRecursive(){
 
    
- if (headPtr == nullptr)
- {
-     std::cout << "a" << std::endl;
-    return 0;
- }
-   Node<ItemType> nextNode;
-   nextNode.setItem(headPtr->getItem());
-   nextNode.setNext(headPtr->getNext());
+//  if (headPtr == nullptr)
+//  {
+//      std::cout << "a" << std::endl;
+//     return 0;
+//  }
+//    Node<ItemType> nextNode;
+//    nextNode.setItem(headPtr->getItem());
+//    nextNode.setNext(headPtr->getNext());
    
-    if (nextNode->getNext() != nullptr){
-        LinkedBag<ItemType> restOfList;
-        restOfList.add(nextNode);
-        return 1 + restOfList.getCurrentSizeRecursive();
-    }
-   // if (){
-   //      LinkedBag<ItemType> restOfList;
-   //      restOfList.;
-   //      return 1 + restOfList.getCurrentSizeRecursive();
-   //  }
+//     if (nextNode != nullptr){
+//         LinkedBag<ItemType> restOfList;
+//         restOfList.
+//         return 1 + restOfList.getCurrentSizeRecursive();
+//     }
+//    if (){
+//         LinkedBag<ItemType> restOfList;
+//         restOfList.;
+//         return 1 + restOfList.getCurrentSizeRecursive();
+//     }
 
-   return 1;
+//    return 1;
 }
 
 template<class ItemType>

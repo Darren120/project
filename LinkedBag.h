@@ -25,19 +25,19 @@ private:
 public:
    LinkedBag();
    LinkedBag(const LinkedBag<ItemType>& aBag); // Copy constructor
-   LinkedBag(ItemType entries[], int entryCount);
+   LinkedBag(ItemType entries[], int entryCount); // question 1
    virtual ~LinkedBag();                       // Destructor should be virtual
    int getCurrentSize() const;
    bool isEmpty() const;
-   bool add(const ItemType& newEntry);
+   bool add(const ItemType& newEntry); // question 2: modify to add things to end of list
    bool remove(const ItemType& anEntry);
    void clear();
    bool contains(const ItemType& anEntry) const;
    int getFrequencyOf(const ItemType& anEntry) const;
    std::vector<ItemType> toVector() const;
-   void deleteSecondNode();
-   int getCurrentSizeRecursive();
-   ItemType removeRandom();
+   void deleteSecondNode(); // question 3 delete second node
+   int getCurrentSizeRecursive(); // question 4 get item recrusively 
+   ItemType removeRandom(); //question 5 remove random
    
 }; // end LinkedBag
 
